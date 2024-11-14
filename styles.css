@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 86%);
+}
+
+h1{
+    margin: 2rem 0;
+    font-size: 4rem;
+}
+
+#watch-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 60%);
+}
+
+#display{
+    font-size: 4rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    text-shadow: 2px 2px 2px hsla(0, 0%, 80%, 0.75);
+    margin-bottom: 20px;
+}
+
+#controls{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+#controls button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition-duration: 200ms;
+    font-family: "Inter", serif;
+}
+
+#btnWrap{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#lapBtn, #resetBtn{
+    flex-grow: 2;
+    width: 50%;
+} 
+
+#startBtn:hover{
+    background-color: hsl(115, 100%, 30%);
+    color: white;
+}
+#stopBtn:hover{
+    background-color: hsl(10, 90%, 45%);
+    color: white;
+}
+#lapBtn:hover{
+    background-color: hsl(205, 90%, 40%);
+    color: white;
+}
+#resetBtn:hover{
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+}
+
+#lapTime{
+    background-color: hsl(0, 0%, 89%);
+    margin-top: 10px;
+    padding: 30px;
+    padding-left: 70px;
+    border-radius: 10px;
+    min-width: 340px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+
+#lapTime ol{
+    width: 70%;
+    text-align: center;
+}
+

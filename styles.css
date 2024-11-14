@@ -12,10 +12,12 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: hsl(0, 0%, 86%);
+    max-height: 100vh;
 }
 
 h1{
-    margin: 2rem 0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     font-size: 4rem;
 }
 
@@ -72,21 +74,37 @@ h1{
     background-color: hsl(115, 100%, 30%);
     color: white;
 }
+#startBtn:active{
+    background-color: hsl(115, 100%, 40%);
+}
+
 #stopBtn:hover{
     background-color: hsl(10, 90%, 45%);
     color: white;
 }
+#stopBtn:active{
+    background-color: hsl(10, 90%, 55%);
+}
+
 #lapBtn:hover{
     background-color: hsl(205, 90%, 40%);
     color: white;
 }
+#lapBtn:active{
+    background-color: hsl(205, 90%, 50%);
+}
+
 #resetBtn:hover{
     background-color: hsl(0, 0%, 30%);
     color: white;
 }
+#resetBtn:active{
+    background-color: hsl(0, 0%, 40%);
+}
 
-#lapTime{
+#lapTimeContainer{
     background-color: hsl(0, 0%, 89%);
+    max-height: 30vh;
     margin-top: 10px;
     padding: 30px;
     padding-left: 70px;
@@ -98,10 +116,11 @@ h1{
     display: flex;
     justify-content: center;
     letter-spacing: 2px;
-    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
-#lapTime ol{
+#displayLapTime{
     width: 70%;
     text-align: center;
 }
